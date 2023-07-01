@@ -13,7 +13,7 @@ def toss_coin():
     print("You got",random.choice(["Heads","Tails"]))
 
 def hand_cric():
-    option = input("Rock(1)/Paper(2)/Scissors(3)").lower()
+    option = input("Rock(1)/Paper(2)/Scissors(3) : ").lower()
     bot_choice = random.choice(["Rock","Paper","Scissors"])
     if option == "rock" or option == "1":
         if bot_choice == "Rock":

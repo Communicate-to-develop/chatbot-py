@@ -13,29 +13,31 @@ def toss_coin():
     print("You got",random.choice(["Heads","Tails"]))
 
 def hand_cric():
-    option = input("Rock(1)/Paper(2)/Scissors(3) : ").lower()
+    choice = input("Rock(1)/Paper(2)/Scissors(3) : ").lower()
     bot_choice = random.choice(["Rock","Paper","Scissors"])
-    if option == "rock" or option == "1":
+    if choice == "rock" or choice == "1":
         if bot_choice == "Rock":
-            print("I too chose Rock. It's a draw!")
+            print("I too chose Rock. It's a draw")
         elif bot_choice == "Paper":
             print("I chose Paper. You lost!")
         else:
             print("I chose Scissors. You won!")
-    elif option == "paper" or option == "2":
+    elif choice == "paper" or choice == "2":
         if bot_choice == "Rock":
             print("I chose Rock. You won!")
         elif bot_choice == "Paper":
             print("I too chose Paper. It's a draw!")
         else:
             print("I chose Scissors. You lost!")
-    elif option == "scissors" or option == 3:
+    elif choice == "scissors" or choice == 3:
         if bot_choice == "Rock":
             print("I chose Rock. You lost!")
         elif bot_choice == "Paper":
             print("I chose Paper. You won!")
         else:
             print("I too chose Scissors. It's a draw!")
+    else:
+        print("That's not a valid option!")
 
 #actual program starts here
 while True:
@@ -49,8 +51,8 @@ while True:
             toss_coin()
         elif query == "hand cricket":
             hand_cric()
+        else:
+            print("Sorry, couldn't understand that.")
     elif query == "exit":
         print("Closing program.")
         break
-    else:
-        print("Sorry, couldn't understand that.)")

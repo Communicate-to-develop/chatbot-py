@@ -12,7 +12,7 @@ def roll_dice():
 def toss_coin():
     print("You got",random.choice(["Heads","Tails"]))
 
-def hand_cric():
+def rpc():
     choice = input("Rock(1)/Paper(2)/Scissors(3) : ").lower()
     bot_choice = random.choice(["Rock","Paper","Scissors"])
     if choice == "rock" or choice == "1":
@@ -49,8 +49,8 @@ while True:
             roll_dice()
         elif query == "toss a coin":
             toss_coin()
-        elif query == "hand cricket":
-            hand_cric()
+        elif query == "rpc":
+            rpc()
         else:
             print("Sorry, couldn't understand that.")
     elif query == "exit":

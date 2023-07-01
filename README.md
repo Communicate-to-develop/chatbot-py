@@ -10,4 +10,18 @@
 - Create GUI using python module `tkinter`.
 
 # Documentation
-- Bot commands goes here.
+## 1. Standard reply
+- Replies to greetings.\
+**Command** : `hello`, `hi`
+
+## 2. Roll dice
+- Rolls a standard unbiased 6 sided dice.\
+**Command** : `roll a dice`
+
+## 3. Toss coin
+- Tosses a standard unbiased 2 sided coin.\
+**Command** : `toss a coin`
+
+## 4. Rock/Paper/Scissors
+- Plays Rock/Paper/Scissors with you.\
+**Command** : `rpc`

@@ -1,13 +1,14 @@
 import random
 
+user_greetings = ["hi","hello","hey","hai","what's up","whats up","hey there"]
 #functions are defined here
 def hello_reply():
     #pls add some good english replies
     hello_replies = ["Hello!","Hi!","Hey there.","What's up?"]
     print(random.choice(hello_replies))
 
-def roll_dice():
-    print("You got",random.randint(1,6))
+def rand_num(x):
+    print(random.randint(1,x))
 
 def toss_coin():
     print("You got",random.choice(["Heads","Tails"]))
@@ -39,18 +40,29 @@ def rps():
     else:
         print("That's not a valid option!")
 
+def pass_gen(x):
+    pass_symbols = ['1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','@','$','#','$','*','_','-','~']
+    password = ""
+    for i in range(0,x):
+        password += random.choice(pass_symbols)
+    print(password)
+
 #actual program starts here
 while True:
     query = input("Command : ").lower()
     if query != "exit":
-        if query == "hi" or query == "hello":
+        if query in user_greetings:
             hello_reply()
-        elif query == "roll a dice":
-            roll_dice()
+        elif query == "random number":
+            dice_num = int(input("Number limit : "))
+            rand_num(dice_num)
         elif query == "toss a coin":
             toss_coin()
         elif query == "rps":
             rps()
+        elif query == "generate password":
+            x = int(input("Enter length of password : "))
+            pass_gen(x)
         else:
             print("Sorry, couldn't understand that.")
     elif query == "exit":

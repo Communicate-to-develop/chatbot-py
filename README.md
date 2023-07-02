@@ -24,4 +24,8 @@
 
 ## 4. Rock/Paper/Scissors
 - Plays Rock/Paper/Scissors with you.\
-**Command** : `rpc`
+**Command** : `rps`
+
+##5. Password generator
+- Generates a password of given length.
+- **Command** : `generate password`

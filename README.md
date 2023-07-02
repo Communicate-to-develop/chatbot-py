@@ -26,6 +26,6 @@
 - Plays Rock/Paper/Scissors with you.\
 **Command** : `rps`
 
-##5. Password generator
+## 5. Password generator
 - Generates a password of given length.
 - **Command** : `generate password`
